@@ -13,6 +13,7 @@ class Solution(object):
                 return True
         return False
     
+    
 # Better Version of Mine:
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
@@ -23,6 +24,7 @@ class Solution:
             else:
                 visited.add(num)
         return False
+    
     
 # One-liner Solution:
 class Solution(object):
