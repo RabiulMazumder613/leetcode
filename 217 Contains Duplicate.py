@@ -13,7 +13,18 @@ class Solution(object):
                 return True
         return False
     
-# Fastest Solution:
+# Better Version of Mine:
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        visited = set()
+        for num in nums:
+            if num in visited:
+                return True
+            else:
+                visited.add(num)
+        return False
+    
+# One-liner Solution:
 class Solution(object):
     def containsDuplicate(self, nums):
         """
