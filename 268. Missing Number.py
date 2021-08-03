@@ -16,5 +16,5 @@ class Solution:
         for number in range(n):
             if number not in num_set:
                 return number
-[![Missing Number - LeetCode 268](https://img.youtube.com/vi/i0WwsQYrMAM/0.jpg)](https://www.youtube.com/watch?v=i0WwsQYrMAM "Missing Number - LeetCode 268")
 
+# Video Explaination Link: https://www.youtube.com/watch?v=i0WwsQYrMAM
