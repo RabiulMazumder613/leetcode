@@ -22,6 +22,19 @@ class Solution:
                 ans.append(i)
         
         return ans
+    
+# Using Dictionary:
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        output = {}
+        n = len(nums) + 1
+        nums = set(nums)
+        
+        for i in range(1, n):
+            if i not in nums:
+                output[i] = i
+        
+        return output
 
 # Ideal Solution: (Fast) Time Complexity O(n) | Space Complexity: O(1)      
 # This is with O(1) space as the question gives a follow up to increase the difficulty
