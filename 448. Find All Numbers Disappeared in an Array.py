@@ -32,7 +32,7 @@ class Solution:
         
         for i in range(1, n):
             if i not in nums:
-                output[i] = i
+                output[i] = i # Doesn't have to be i it can also True or whatever
         
         return output
 
