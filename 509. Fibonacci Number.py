@@ -32,7 +32,7 @@ class Solution:
         for i in range(2, n+1):
             cache.append(cache[0] + cache[1])
             del cache[0]
-        return cache.pop() if n >= 1 else 0    
+        return cache.pop() if n >= 1 else cache[0]  
       
 # Bottom Up Method: Iterative
 # If...Else... at the beginning 
@@ -41,7 +41,7 @@ class Solution:
     def fib(self, n: int) -> int:
         cache = [0,1]
         if n == 0:
-            return 0
+            return cache[0]
         else:
             for i in range(2, n+1):
                 cache.append(cache[0] + cache[1])
@@ -69,7 +69,7 @@ class Solution:
             nextFib = lastTwo[0] + lastTwo[1]
             lastTwo[0] = lastTwo[1]
             lastTwo[1] = nextFib
-        return lastTwo[1] if n >= 1 else 0        
+        return lastTwo[1] if n >= 1 else lastTwo[0]        
 
 # ALTERNATIVE Bottom Up Method: Iterative
 # More explicit Swapping 
@@ -79,7 +79,7 @@ class Solution:
     def fib(self, n: int) -> int:
         lastTwo = [0,1]
         if n == 0:
-            return 0
+            return lastTwo[0]
         else:
             for i in range(2,n+1):
                 nextFib = lastTwo[0] + lastTwo[1]
